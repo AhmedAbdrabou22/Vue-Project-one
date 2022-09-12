@@ -26,7 +26,7 @@
                         <router-link to="/register"><a class="nav-link  text-dark" href="">Register</a></router-link>
                     </li>
                 </ul>
-                <button class="btn mx-1 p-3 ">Host And Adventure</button>
+                <button class="btn mx-1 p-3 "> <router-link to="/register"><a class="nav-link  text-dark" href="">Host And Adventure</a></router-link></button>
             </div>
         </div>
     </nav>
