@@ -49,7 +49,7 @@
 form {
     width: 450px;
 }
-bordered{
+#bordered{
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
