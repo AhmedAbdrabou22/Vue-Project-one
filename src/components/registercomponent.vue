@@ -89,4 +89,9 @@ button i{
     text-align:end;
     padding-left: 5px;
 }
+@media(max-width:768px){
+    .loginform{
+        width:100%;
+    }
+}
 </style>

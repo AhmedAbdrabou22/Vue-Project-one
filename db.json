@@ -1,0 +1,53 @@
+{
+  "traveldata": [
+    {
+      "img": "/img/10.190951b4.jpg",
+      "title": "Diving"
+    },
+    {
+      "img": "/img/11.61ee65ab.jpg",
+      "title": "Climbing"
+    },
+    {
+      "img": "/img/16566726650.9d65b561.jpg",
+      "title": "biking"
+    },
+    {
+      "img": "/img/13.8feb1416.jpg",
+      "title": "tourrims"
+    },
+    {
+      "img": "/img/10.190951b4.jpg",
+      "title": "safari"
+    },
+    {
+      "img": "/img/11.61ee65ab.jpg",
+      "title": "building"
+    },
+    {
+      "img": "/img/16566726650.9d65b561.jpg",
+      "title": "suffering"
+    },
+    {
+      "img": "/img/13.8feb1416.jpg",
+      "title": "offroading"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

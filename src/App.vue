@@ -6,6 +6,7 @@
 
 <script>
   import navbarcomponents from './components/navbarcomponent.vue'
+  import adventure from './components/adventure.vue'
     export default {
       data(){
         return {
@@ -13,7 +14,7 @@
         }
       },
 
-      components: {navbarcomponents},
+      components: {navbarcomponents ,adventure},
     }
 </script>
 
