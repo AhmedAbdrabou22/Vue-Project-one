@@ -1,4 +1,5 @@
 <template>
+    <displayimg/>
     <div class="mt-5">
         <h2 class="text-center mb-3">FEATURE TOURS</h2>
         <div class="container">
@@ -8,7 +9,7 @@
                         <div class="image text-center rounded-circle">
                             <img :src="data.profile" alt="" class="rounded-circle" />
                         </div>
-                        <img :src="data.img" class="card-img-top" alt="">
+                        <img :src='data.img' class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">{{data.cardtitle}}</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -22,6 +23,7 @@
 </template>
 
 <script>
+        import displayimg from './displayimg.vue'
 export default {
     data() {
         return {
@@ -38,15 +40,11 @@ export default {
     },
 
     methods: {
-        displayimg(){
-            let tr = '';
-            for(let i = 0; i<14;i++){
-                tr+= `<img src="../assets/${i+1}.jpg" alt="">`
-            }
-            return tr
-        }
 
     },
+    components: {
+        displayimg
+    }
 }
 </script>
 
@@ -56,21 +54,25 @@ export default {
     width: 100%;
     height: 250px;
 }
-.card{
+
+.card {
     position: relative;
 }
-.card .image{
-    width:87px;
-    height:87px;
+
+.card .image {
+    width: 87px;
+    height: 87px;
     position: absolute;
-    top:-10%;
-    left:50%;
+    top: -10%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: white;
 }
-.image img{
-    width:80px;
+
+.image img {
+    width: 80px;
 }
+
 h2 {
     color: #666;
 }
