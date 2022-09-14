@@ -48,4 +48,10 @@ p {
     color:white;
     text-decoration: none;
 }
+@media(max-width:768px) {
+    .overlaycontent{
+        width:100%;
+        height: min-content;
+    }
+}
 </style>

@@ -9,7 +9,7 @@
       "title": "Climbing"
     },
     {
-      "img": "/img/16566726650.9d65b561.jpg",
+      "img": "/img/13.8feb1416.jpg",
       "title": "biking"
     },
     {
@@ -25,7 +25,7 @@
       "title": "building"
     },
     {
-      "img": "/img/16566726650.9d65b561.jpg",
+      "img": "/img/10.190951b4.jpg",
       "title": "suffering"
     },
     {
@@ -33,6 +33,17 @@
       "title": "offroading"
     }
   ],
+
+  "countrytravel" : [
+    {"img" : "/img/1.0ee17f34.jpg"},
+    {"img" : "/img/5.c745bb8e.jpg"},
+    {"img" : "/img/6.9d65b561.jpg"},
+    {"img" : "/img/7.571be33d.jpg"},
+    {"img" : "/img/8.7de51fd8.png"},
+    {"img" : "/img/9.f47197de.jpg"}
+  ],
+
+
   "posts": [
     {
       "id": 1,
