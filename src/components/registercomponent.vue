@@ -2,14 +2,14 @@
     <div class="net p-3">
         <div class="loginform mt-2 container p-3 rounded shadow">
             <div class="text-center title mb-3"><span id="upper">REGISTRATION FORM</span></div>
-            <div>
-                <h3 class="text-center m-3">Update Your Profile Picture</h3>
-                <div class="m-auto  mt-3  mb-3 w-50 rounded">
-                    <form>
-                        <label for="imgInp" class="imgnp" @click="uploadimage">Upload Image</label>
+            <div class="s">
+                <p class="text-center">Update Your Profile Picture</p>
+                <div class="w-50 a">
+                    <form class="m-auto">
+                        <label for="imgInp" class="imgnp text-center m-auto" @click="uploadimage">Upload Image</label>
                         <input type='file' id="imgInp" ref="imagefile" />
-                        <div id="filename">
-                            <img src="" id="blah" ref="upload">
+                        <div id="filename m-auto text-center">
+                            <img src="../assets/download.png" id="blah" ref="upload" class="text-center">
                         </div>
                     </form>
                 </div>
@@ -21,7 +21,7 @@
                     travellers.</p>
                 <p>For additional help and questions, you can get in contact with us at <b>support@embark.org</b></p>
             </div>
-            <form class="g-3 py-3">
+            <form class="py-3">
                 <div>
                     <label for="name" class="form-label text-muted my-3">Name</label>
                     <input type="text" class="form-control py-3" id="name">
@@ -133,7 +133,13 @@ button i {
     text-align: center;
     border-radius: 10px;
 }
-
+.s{
+    width:100%;
+    margin: auto;
+}
+.s .a{
+    margin: auto;
+}
 #imgInp {
     opacity: 0;
     position: absolute;
@@ -142,10 +148,10 @@ button i {
 
 #filename {
     margin: 25px auto;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height:150px;
     border-radius: 50%;
-    border: 1px solid #f8fafc;
+    border: 1px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,8 +159,8 @@ button i {
 }
 
 #blah {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height:100%;
     border-radius: 50%;
     align-self: center;
 }
@@ -164,5 +170,11 @@ button i {
     .loginform {
         width: 100%;
     }
+    .s{
+        padding: 5px;
+    }
+    .s .a{
+    margin: 0px;
+}
 }
 </style>
