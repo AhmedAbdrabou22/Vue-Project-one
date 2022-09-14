@@ -40,7 +40,7 @@ export default {
     methods: {
         displayimg(){
             let tr = '';
-            for(let i = 0; i<5;i++){
+            for(let i = 0; i<14;i++){
                 tr+= `<img src="../assets/${i+1}.jpg" alt="">`
             }
             return tr
