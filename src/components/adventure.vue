@@ -6,7 +6,7 @@
                 <p>Book tours with local hosts and share experiences with a community of passionate travelers.</p>
             </div>
             <div>
-                <button class="btn btn-primary mx-3 mt-3 p-4"><router-link id="router" to="/tours">Book Your Adventure</router-link></button>
+                <button class="btn btn-primary mx-3 mt-3 p-4"><router-link id="router" to="/feature">Book Your Adventure</router-link></button>
                 <button class="btn btn-danger mx-3 mt-3 p-4">Explore The world</button>
             </div>
         </div>

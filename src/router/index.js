@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import logincomponent from '../components/logincomponent.vue'
 import registercomponent from '../components/registercomponent.vue'
 import adventureComponent from '../components/adventure.vue'
-import tours from '../components/tours.vue'
+import feature from '../components/featuretours.vue'
 
 const routes = [
   {
@@ -21,9 +21,9 @@ const routes = [
     component :adventureComponent
   },
   {
-    path: '/tours',
-    name:'tours',
-    component:tours
+    path: '/feature',
+    name:'feature',
+    component:feature
   }
 ]
 

@@ -1,11 +1,13 @@
 <template>
     <displayimg/>
+    <tours @filterdata ="filterit"/>
     <div class="mt-5">
         <h2 class="text-center mb-3">FEATURE TOURS</h2>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5" v-for="data in countrytravel">
-                    <div class="card">
+                <!-- :class="[el.instock >= 5 ? 'more':'' , el.instock < 5 ? 'less' : '' , el.instock ==0  ? 'none':'']" -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 " ref="cardtour" v-for="data in countrytravel">
+                    <div class="card" :class="[data.cardtitle == 'Savana' || data.cardtitle =='Triping' ? 'opacityit':'',]">``
                         <div class="image text-center rounded-circle">
                             <img :src="data.profile" alt="" class="rounded-circle" />
                         </div>
@@ -24,9 +26,11 @@
 
 <script>
         import displayimg from './displayimg.vue'
+        import tours from './tours.vue'
 export default {
     data() {
         return {
+            cc:"date",
             countrydata: [],
             countrytravel: [
                 { img: "/img/1.0ee17f34.jpg", cardtitle: "Savana", profile: "/img/2.00b98ab8.jpg" },
@@ -40,10 +44,17 @@ export default {
     },
 
     methods: {
-
+        run(){
+            let r = document.querySelectorAll('.card')
+            console.log(r)
+        },
+        // filterit(e){
+        //     console.log(typeof e);
+        //     console.log(e);
+        // }
     },
     components: {
-        displayimg
+        displayimg ,tours
     }
 }
 </script>

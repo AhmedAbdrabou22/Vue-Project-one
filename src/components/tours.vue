@@ -12,19 +12,19 @@
                 <table class="mt-3 mx-auto">
                 <tr>
                     <td v-for="tra in traveldata">
-                        <div @click="opacityway($event,tra)"><img :src="tra.img" alt="" /> <span>{{tra.title}}</span>
-                        </div>
+                        <div @click="opacityway($event,tra)"><img :src="tra.img" alt="" /> <span>{{tra.title}}</span></div>
                     </td>
                 </tr>
             </table>
             </div>
         </div>
-        <featuretours />
     </div>
 </template>
 
+
+
 <script>
-import featuretours from './featuretours.vue'
+// import featuretours from './featuretours.vue'
 export default {
     data() {
         return {
@@ -78,9 +78,18 @@ export default {
                 event.path[1].classList.add("opacityit")
                 this.historydata.push(event.path[1])
             }
+            let r = document.querySelectorAll('.card');
+            console.log(r);
+            r.forEach((ele)=>{
+                if(!(ele.classList.contains('opacityit'))) {
+                    ele.style.display = "none";
+                }else{
+                    ele.style.display="block"
+                }
+            })
         }
     },
-    components: { featuretours }
+    // components: { featuretours }
 }
 </script>
 
