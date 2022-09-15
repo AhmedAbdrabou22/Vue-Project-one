@@ -10,9 +10,12 @@
             </form>
             <div class="tablee">
                 <table class="mt-3 mx-auto">
-                <tr>
+                <tr><!-- :class="[el.instock >= 5 ? 'more':'' , el.instock < 5 ? 'less' : '' , el.instock ==0  ? 'none':'']" -->
                     <td v-for="tra in traveldata">
-                        <div @click="opacityway($event,tra)"><img :src="tra.img" alt="" /> <span>{{tra.title}}</span></div>
+                        <div @click="opacityway($event,tra)" :data-filter="[tra.title=='Diving' || tra.title=='tourrims' ? 'all':'no', ]">
+                            <img :src="tra.img" alt="" />
+                            <span>{{tra.title}}</span>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -79,12 +82,12 @@ export default {
                 this.historydata.push(event.path[1])
             }
             let r = document.querySelectorAll('.card');
-            console.log(r);
+            console.log(event.path[1].dataset.filter)
             r.forEach((ele)=>{
-                if(!(ele.classList.contains('opacityit'))) {
-                    ele.style.display = "none";
+                if(ele.classList.contains(event.path[1].dataset.filter)){
+                    ele.style.display = "block";
                 }else{
-                    ele.style.display="block"
+                    ele.style.display = "none";
                 }
             })
         }

@@ -5,9 +5,8 @@
         <h2 class="text-center mb-3">FEATURE TOURS</h2>
         <div class="container">
             <div class="row">
-                <!-- :class="[el.instock >= 5 ? 'more':'' , el.instock < 5 ? 'less' : '' , el.instock ==0  ? 'none':'']" -->
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-5 " ref="cardtour" v-for="data in countrytravel">
-                    <div class="card" :class="[data.cardtitle == 'Savana' || data.cardtitle =='Triping' ? 'opacityit':'',]">``
+                    <div class="card" :class="[data.cardtitle == 'Savana' || data.cardtitle =='Triping' || data.cardtitle =='Caves' ? 'all':'no',]">
                         <div class="image text-center rounded-circle">
                             <img :src="data.profile" alt="" class="rounded-circle" />
                         </div>
