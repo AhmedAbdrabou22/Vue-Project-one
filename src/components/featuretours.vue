@@ -24,8 +24,9 @@
 </template>
 
 <script>
-        import displayimg from './displayimg.vue'
-        import tours from './tours.vue'
+import displayimg from './displayimg.vue'
+import tours from './tours.vue'
+import splitcomponents from './splitscomponent.vue'
 export default {
     data() {
         return {
@@ -43,17 +44,9 @@ export default {
     },
 
     methods: {
-        run(){
-            let r = document.querySelectorAll('.card')
-            console.log(r)
-        },
-        // filterit(e){
-        //     console.log(typeof e);
-        //     console.log(e);
-        // }
     },
     components: {
-        displayimg ,tours
+        displayimg ,tours,splitcomponents
     }
 }
 </script>

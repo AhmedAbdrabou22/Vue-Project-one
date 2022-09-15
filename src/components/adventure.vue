@@ -6,12 +6,28 @@
                 <p>Book tours with local hosts and share experiences with a community of passionate travelers.</p>
             </div>
             <div>
-                <button class="btn btn-primary mx-3 mt-3 p-4"><router-link id="router" to="/feature">Book Your Adventure</router-link></button>
+                <button class="btn btn-primary mx-3 mt-3 p-4">
+                    <router-link id="router" to="/feature">Book Your Adventure</router-link>
+                </button>
                 <button class="btn btn-danger mx-3 mt-3 p-4">Explore The world</button>
             </div>
         </div>
     </div>
+    <splitcomponents />
 </template>
+
+
+<script>
+import splitcomponents from './splitscomponent.vue'
+export default {
+    data() {
+        return {
+
+        }
+    },
+    components: {splitcomponents}
+}
+</script>
 
 <style>
 .overlay {
@@ -44,13 +60,15 @@ h1,
 p {
     color: #666;
 }
-#router{
-    color:white;
+
+#router {
+    color: white;
     text-decoration: none;
 }
+
 @media(max-width:768px) {
-    .overlaycontent{
-        width:100%;
+    .overlaycontent {
+        width: 100%;
         height: min-content;
     }
 }

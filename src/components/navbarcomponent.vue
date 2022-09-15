@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href=""><img src="../assets/logo.jpg" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,7 +63,9 @@ export default {
 form {
     width: 450px;
 }
-
+nav{
+    background-color: white;
+}
 .bordered {
     border-left: 1px solid black;
     border-right: 1px solid black;
