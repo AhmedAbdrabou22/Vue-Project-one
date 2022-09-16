@@ -6,7 +6,7 @@
 
             <div class="reponsible mt-5">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="pt-2">
                             <div class="res"><img src="@/assets/16.jpg" alt="reponible one"></div>
                             <div class="mt-3">
@@ -15,7 +15,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="pt-2">
                             <div class="res"><img src="@/assets/31.jpeg" alt="reponible one"></div>
                             <div class="mt-3">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="pt-2">
                             <div class="res"><img src="@/assets/32.jpeg" alt="reponible one"></div>
                             <div class="mt-3">
