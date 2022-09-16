@@ -14,18 +14,20 @@
         </div>
     </div>
     <splitcomponents />
+    <adventurework/>
 </template>
 
 
 <script>
 import splitcomponents from './splitscomponent.vue'
+import adventurework from './adventurework.vue'
 export default {
     data() {
         return {
 
         }
     },
-    components: {splitcomponents}
+    components: {splitcomponents , adventurework}
 }
 </script>
 
