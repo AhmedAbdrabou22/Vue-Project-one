@@ -3,6 +3,7 @@ import logincomponent from '../components/logincomponent.vue'
 import registercomponent from '../components/registercomponent.vue'
 import adventureComponent from '../components/adventure.vue'
 import feature from '../components/featuretours.vue'
+import members from '../components/members.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/feature',
     name:'feature',
     component:feature
+  },
+  {
+    path :'/members',
+    name:'members',
+    component:members
   }
 ]
 

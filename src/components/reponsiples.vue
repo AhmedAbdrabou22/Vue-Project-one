@@ -35,6 +35,10 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <router-link to="/members"><button class="btn btn-primary p-3 m-3">MEET THE COMMUNITY</button></router-link>
+                <button class="btn btn-danger p-3 m-3">JOIN OUR COMMUNITY</button>
+            </div>
         </div>
     </div>
 </template>
