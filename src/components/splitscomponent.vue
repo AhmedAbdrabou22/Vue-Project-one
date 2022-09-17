@@ -1,5 +1,5 @@
 <template>
-<div class="s">
+    <div class="s">
         <div class="container pt-3">
             <div class="magal">
                 <div class="gallery">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </template>
 
 
@@ -76,41 +76,48 @@ export default {
 
 
 <style scoped>
-    .magal{
-    width:100%;  
+.magal {
+    width: 100%;
 }
-.container{
+
+.container {
     background-color: crimson;
 }
-.s{
+
+.s {
     background-color: crimson;
 }
-.magal .gallery{
+
+.magal .gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.magal .gallery .image{
-    width:calc(95% / 3);
-    margin:0px;
+
+.magal .gallery .image {
+    width: calc(95% / 3);
+    margin: 0px;
     overflow: hidden;
     position: relative;
 }
-.magal .gallery .image img{
-    width:100%;
-    height:300px;
+
+.magal .gallery .image img {
+    width: 100%;
+    height: 300px;
     vertical-align: middle;
     transition: all 0.3s ease;
 }
-.magal .gallery .image:hover img{
+
+.magal .gallery .image:hover img {
     transform: scale(1.1);
 }
-.sp{
+
+.sp {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 25px;
     text-align: center;
@@ -118,14 +125,25 @@ export default {
     width: 100%;
     height: 100%;
 }
-.sp .pp{
+
+.sp .pp {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.sp p{
+
+.sp p {
     font-size: 25px;
     color: white;
+}
+
+@media(max-width:768px) {
+    .magal .gallery .image {
+        width: calc(95% / 1);
+        margin: 0px;
+        overflow: hidden;
+        position: relative;
+    }
 }
 </style>
